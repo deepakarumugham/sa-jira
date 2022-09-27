@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formbox {
+  margin-top: 20px;
+  border: #4e95f4 2px solid;
+  width: 500px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.title{
+  position: relative;
+  top: -10px;
+  display: inline;
+  background: #b8d1f3;
+  font-size: 20px;
+  font-weight: bold;
+  width: 500px;
+  border-radius: 6px;
+}
+
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.spinner div {
+  margin-left: 250px;
+  position: absolute;
+  border: 4px solid rgb(29, 29, 29);
+  opacity: 1;
+  border-radius: 50%;
+  animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.spinner div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes spinner {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+input, select, select > option {
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: #4e95f4 2px solid;
+  border-radius: 4px;  
+}
+
+input:hover, select:hover{
+  background-color: #ffff99;
+}
+
+option:hover {
+  background-color: grey;
+}
+
+.btnSub {
+  margin-left: 200px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;  
+}
+
+label {
+  width: 100px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+
+table {
+  border: #4e95f4 2px solid ;
+  width: 800px;
+  height: 200px;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+  
+th {
+  border-bottom: #4e95f4 1px solid;
+}
+  
+td {
+  text-align: center;
+  padding: 7px;
+  border: #4e95f4 1px solid;
+}
+
+tr {
+  background: #b8d1f3;
+}
+
+tr:hover {
+  background-color: #ffff99;
+}
+
+.assignee {
+  margin-left: 50px;
+}

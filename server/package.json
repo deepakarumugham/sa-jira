@@ -1,0 +1,20 @@
+{
+  "name": "jira",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start server.js -i 4",
+    "prod": "nodemon start server.js"
+  },
+  "author": "deepak.arumugham",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.20"
+  }
+}

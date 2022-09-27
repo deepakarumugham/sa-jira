@@ -1,0 +1,48 @@
+GET http://localhost:4000/tickets/
+
+###
+
+GET http://localhost:4000/tickets?status=NEW
+
+###
+
+PUT http://localhost:4000/tickets/6330a7c47c0e0ab1a8184c2e
+Content-Type: application/json
+
+{
+    "status": "NEW",
+    "assignee": "6330a7937c0e0ab1a8184c2a"
+}
+###
+POST http://localhost:4000/tickets/
+Content-Type: application/json
+
+{
+    "title": "Issue in prod2",
+    "description": "Server ran out of memory2"
+}
+
+###
+DELETE http://localhost:4000/tickets/6330a589d6cb1f29ae3c8513
+
+###
+
+GET http://localhost:4000/users/
+
+###
+
+POST http://localhost:4000/users/
+Content-Type: application/json
+
+{
+    "name": "Ned Rockson",
+    "email": "ned@slashauth.com"
+}
+###
+
+PUT http://localhost:4000/users/6330a7937c0e0ab1a8184c2a
+Content-Type: application/json
+
+{
+    "ticketID": "6330a7c47c0e0ab1a8184c2e"
+}
